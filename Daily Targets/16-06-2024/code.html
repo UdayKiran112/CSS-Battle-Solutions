@@ -1,0 +1,49 @@
+<a>
+  <p></p>
+  <p></p>
+  <p></p>
+</a>
+<a i>
+  <p i></p>
+  <p j></p>
+  <p k></p>
+</a>
+<style>
+  * {
+    margin: 0;
+    background: #ffcd;
+  }
+
+  a {
+    display: flex;
+    gap: 10px;
+    position: fixed;
+    top: 170;
+    left: 70;
+  }
+
+  p {
+    width: 80;
+    height: 120;
+    background: #edaf38;
+  }
+
+  a[i] {
+    top: 10;
+    left: 60;
+    gap: 0;
+  }
+
+  p[i],
+  p[j],
+  p[k] {
+    height: 130;
+    background: #ffcd;
+    border: 10px solid #edaf38;
+  }
+
+  p[i],
+  p[j] {
+    border-right: none;
+  }
+</style>
