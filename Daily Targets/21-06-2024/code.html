@@ -1,0 +1,49 @@
+/* Method 1 */
+<style>
+  * {
+    background: #f48b26;
+    * {
+      background: #feff58;
+      margin: 50 50 0 0;
+      clip-path: polygon(
+        0%0%,
+        100%0%,
+        100%20%,
+        57.1%20%,
+        57.1%40%,
+        100%40%,
+        100%60%,
+        57.1%60%,
+        57.1%80%,
+        100%80%,
+        100%100%,
+        0%100%
+      );
+    }
+  }
+</style>
+
+/* Method 2 */
+<p></p>
+<p a>
+  <style>
+    * {
+      * {
+        background: #feff58;
+        margin: 50 50 0 0;
+      }
+      background: #f48b26;
+    }
+    p {
+      width: 150;
+      height: 50;
+      background: #f48b26;
+      position: fixed;
+      top: 50;
+      left: 200;
+    }
+    [a] {
+      top: 150;
+    }
+  </style>
+</p>
